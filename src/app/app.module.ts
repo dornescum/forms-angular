@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 // import { FormBindComponent } from './components/form-bind/form-bind.component';
 import { BindComponent } from './components/bind/bind.component';
 import { FormComponent } from './components/form/form.component';
+import { SimpleComponent } from './components/simple/simple.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     // FormBindComponent,
     BindComponent,
-    FormComponent
+    FormComponent,
+    SimpleComponent
   ],
   imports: [
     BrowserModule,

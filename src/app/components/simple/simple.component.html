@@ -1,0 +1,26 @@
+<div class="container-fluid">
+  <form action="" #userForm='ngForm' (ngSubmit)="sendInfo()">
+      <pre>
+          {{userForm.value | json}}
+
+      </pre>
+
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input class="form-control" id="name" name="userName" type="text" required [(ngModel)]="info.userName">
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input class="form-control" id="email" type="text" required name="email" [(ngModel)]="info.email">
+    </div>
+    <button class="btn btn-primary">Sent</button>
+  </form>
+
+  <hr>
+ <div>
+   <button (click)="getInfo()">get info</button>
+    <ul>
+      <li *ngFor="let item of allData">{{item}}</li>
+    </ul>
+ </div>
+</div>

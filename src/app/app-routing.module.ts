@@ -2,12 +2,15 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {BindComponent} from "src/app/components/bind/bind.component";
 import {FormComponent} from "src/app/components/form/form.component";
+import {AppComponent} from "src/app/app.component";
+import {SimpleComponent} from "src/app/components/simple/simple.component";
 
 const routes: Routes = [
   // {path:'', pathMatch:'full'},
-
+  // {path:'', component: AppComponent},
   {path:'bind', component:BindComponent},
-  {path:'form', component: FormComponent}
+  {path:'form', component: FormComponent},
+  {path:'simple', component:SimpleComponent}
 ];
 
 @NgModule({
