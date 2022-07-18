@@ -10,6 +10,7 @@ import { BindComponent } from './components/bind/bind.component';
 import { FormComponent } from './components/form/form.component';
 import { SimpleComponent } from './components/simple/simple.component';
 import { NavbarComponent } from './components/UI/navbar/navbar.component';
+import { ReactiveComponent } from './components/reactive/reactive.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NavbarComponent } from './components/UI/navbar/navbar.component';
     BindComponent,
     FormComponent,
     SimpleComponent,
-    NavbarComponent
+    NavbarComponent,
+    ReactiveComponent
   ],
   imports: [
     BrowserModule,
