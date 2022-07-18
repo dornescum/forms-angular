@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { BindComponent } from './components/bind/bind.component';
 import { FormComponent } from './components/form/form.component';
 import { SimpleComponent } from './components/simple/simple.component';
+import { NavbarComponent } from './components/UI/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SimpleComponent } from './components/simple/simple.component';
     // FormBindComponent,
     BindComponent,
     FormComponent,
-    SimpleComponent
+    SimpleComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

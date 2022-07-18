@@ -22,12 +22,12 @@ export class SimpleComponent implements OnInit {
   sendInfo() {
     // console.log("name :  ", this.userName)
     // console.log("email: ", this.email)
-    console.log(this.info.userName)
-    console.log(this.info.email)
-    console.log(this.info)
+    // console.log(this.info.userName)
+    // console.log(this.info.email)
+    // console.log(this.info)
     this.enrollmentService.enroll(this.info).subscribe((data:{}) => {
       try {
-        console.log(typeof data)
+        console.log(data)
         this.info.userName = ''
         this.info.email = ''
       } catch (err) {

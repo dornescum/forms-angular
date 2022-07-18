@@ -1,6 +1,6 @@
 <div class="container-fluid">
 
-  <form #userForm='ngForm' action="" (ngSubmit)="onSubmit()" novalidate>
+  <form #userForm='ngForm' action="" (ngSubmit)="onSubmit(userForm)" novalidate>
     <div class="col-md-6">
        <pre>
           {{userForm.value | json}}

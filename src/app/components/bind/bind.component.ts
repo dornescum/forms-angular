@@ -15,14 +15,15 @@ export class BindComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  onSubmit(){
-    console.log(this.userModel)
-    this.enrollmentService.enroll(this.userModel).subscribe((data)=>{
-      try {
-        console.log("Succes",data)
-      } catch (error){
-        console.log("Error", error)
-      }
-    })
+  onSubmit(ngForm:any){
+    console.log(ngForm)
+    // console.log(this.userModel)
+    // this.enrollmentService.enroll(this.userModel).subscribe((data)=>{
+    //   try {
+    //     console.log("Succes",data)
+    //   } catch (error){
+    //     console.log("Error", error)
+    //   }
+    // })
   }
 }
