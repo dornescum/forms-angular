@@ -8,7 +8,10 @@ import {User} from "src/app/components/user";
 export class EnrollmentService {
     url="http://localhost:3000/enroll";
   constructor(private _http:HttpClient) { }
-  enroll(user: User){
+  // enroll(user: User){
+  //   return this._http.post<any>(this.url, user);
+  // }
+  enroll(user: {}){
     return this._http.post<any>(this.url, user);
   }
   // enroll(user: {}){
