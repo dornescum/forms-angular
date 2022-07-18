@@ -7,11 +7,11 @@
 
     <div class="form-group">
       <label for="name">Name</label>
-      <input class="form-control" id="name" name="userName" type="text" required [(ngModel)]="info.userName">
+      <input class="form-control" id="name" name="userName" type="text" [(ngModel)]="info.userName" required >
     </div>
     <div class="form-group">
       <label for="email">Email</label>
-      <input class="form-control" id="email" type="text" required name="email" [(ngModel)]="info.email">
+      <input class="form-control" id="email" type="text"  name="email" [(ngModel)]="info.email" required>
     </div>
     <button class="btn btn-primary">Sent</button>
   </form>
@@ -20,7 +20,11 @@
  <div>
    <button (click)="getInfo()">get info</button>
     <ul>
-      <li *ngFor="let item of allData">{{item}}</li>
+      <li *ngFor="let item of allData">
+        <div>
+          <p>User email:    {{item.email}} <span> & user name: {{item.userName}}</span></p>
+        </div>
+       </li>
     </ul>
  </div>
 </div>
