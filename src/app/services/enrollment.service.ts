@@ -17,4 +17,7 @@ export class EnrollmentService {
   // enroll(user: {}){
   //   return this._http.post<any>(this.url, user);
   // }
+  registrationBuilder(user:{}){
+    return this._http.post<any>("http://localhost:3000/reactive-builder", user);
+  }
 }

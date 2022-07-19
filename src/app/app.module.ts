@@ -12,6 +12,7 @@ import { FormComponent } from './components/form/form.component';
 import { SimpleComponent } from './components/simple/simple.component';
 import { NavbarComponent } from './components/UI/navbar/navbar.component';
 import { ReactiveComponent } from './components/reactive/reactive.component';
+import { BuilderComponent } from './components/builder/builder.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ReactiveComponent } from './components/reactive/reactive.component';
     FormComponent,
     SimpleComponent,
     NavbarComponent,
-    ReactiveComponent
+    ReactiveComponent,
+    BuilderComponent
   ],
   imports: [
     BrowserModule,

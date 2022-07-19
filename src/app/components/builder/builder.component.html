@@ -1,10 +1,10 @@
 <div class="container-fluid">
-  <h2>Reactive form </h2>
-<!--  registrationForm in ts-->
-  <form [formGroup]="registrationForm">
+  <h2 class="my-4">Registration form reactive builder</h2>
+  <!--  registrationForm in ts-->
+  <form [formGroup]="registrationForm" (ngSubmit)="sendReactiveForm()">
     <div class="form-group">
-      <label for="username">UserName</label>
-      <input type="text" class="form-control" name="username" id="username" formControlName="username">
+      <label for="userName">UserName</label>
+      <input type="text" class="form-control" name="username" id="userName" formControlName="userName">
     </div>
     <div class="form-group">
       <label for="password">Password</label>
@@ -14,9 +14,9 @@
       <label for="confirmPassword">UserName</label>
       <input type="text" class="form-control" name="username" id="confirmPassword" formControlName="confirmPassword">
     </div>
-  <button class="btn btn-primary mt-4" type="submit">send</button>
+    <button class="btn btn-primary mt-4" type="submit">send</button>
   </form>
-<pre>
+  <pre>
     {{registrationForm.value | json}}
 </pre>
 
