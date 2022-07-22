@@ -6,6 +6,7 @@ import {AppComponent} from "src/app/app.component";
 import {SimpleComponent} from "src/app/components/simple/simple.component";
 import {ReactiveComponent} from "src/app/components/reactive/reactive.component";
 import {BuilderComponent} from "src/app/components/builder/builder.component";
+import {TestComponent} from "src/app/components/test/test.component";
 
 const routes: Routes = [
   // {path:'', pathMatch:'full'},
@@ -14,7 +15,8 @@ const routes: Routes = [
   {path:'form', component: FormComponent},
   {path:'simple', component:SimpleComponent},
   {path:'reactive', component: ReactiveComponent},
-  {path:'builder', component:BuilderComponent}
+  {path:'builder', component:BuilderComponent},
+  {path:'test', component:TestComponent}
 ];
 
 @NgModule({

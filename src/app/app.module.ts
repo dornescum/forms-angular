@@ -13,6 +13,7 @@ import { SimpleComponent } from './components/simple/simple.component';
 import { NavbarComponent } from './components/UI/navbar/navbar.component';
 import { ReactiveComponent } from './components/reactive/reactive.component';
 import { BuilderComponent } from './components/builder/builder.component';
+import { TestComponent } from './components/test/test.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { BuilderComponent } from './components/builder/builder.component';
     SimpleComponent,
     NavbarComponent,
     ReactiveComponent,
-    BuilderComponent
+    BuilderComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,
